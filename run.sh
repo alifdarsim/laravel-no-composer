@@ -49,6 +49,10 @@ then
     wget -O laravel.tar.gz "https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/laravel8.tar.gz"
     tar -xf laravel.tar.gz -C ./my-project
     rm laravel.tar.gz
+    rm run.sh
+    (cd my-project && php artisan key:generate)
+    echo ""
+    echo -e "\U0002713 \033[0;42mYour Laravel 8 project setup is complete \033[0m";
 elif [ "$selected_choice" = "Laravel 9.x" ]; 
 then
     echo "Laravel 9 not setup yet"
