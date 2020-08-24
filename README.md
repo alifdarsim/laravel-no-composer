@@ -27,33 +27,36 @@
 A basic laravel setup with already composer install running. So you dont have to install any composer or sail (docker) to run laravel.
 
 ## Problem Statement
-There is many time I need to create a Laravel project but there is no composer install on the machine. This happen many times, especially during new docker installation and it's feel like a sin to install composer on docker just to run it once and then never touch it again.
+There is many time I need to create a Laravel project but there is no composer install on the machine or I just cant install composer due to sudo issue. 
+
+This happen many times, especially during new docker installation and it's feel like a sin to install composer on docker just to run it once and then never touch it again.
 
 ## Installation
 
 **Prerequisite**
 
--   PHP >=7.4
+| Version | PHP(*)  |
+|---------|---------|
+| 8       | 7.3-8.1 |
+| 9       | 8.0-8.1 |
+| 10      | 8.1     |
 
-To setup Laravel No Composer, first clone the project and change the directory.
-
+* To install, use <b>CURL</b> method as below
 ```sh
-git clone https://github.com/alifdarsim/laravel-no-composer.git my-project
-cd my-project
+curl -s https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/curl.sh | bash <(cat) </dev/tty
 ```
 
-Then follow the process using either and you will have a fully running basic Laravel installation.
+* Or if you dont have curl installed, use <b>wget</b> instead
+```sh
+wget -O - https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/curl.sh | bash <(cat) </dev/tty
+```
 
-1. Copy `.env.example` to `.env`:
-
-    ```shell
-    cp .env.example .env
-    ```
+After the installation finish, run below command to run laravel
 
 1. Generate application key:
 
     ```shell
-    php artisan key:generate
+    cd your-project-name
     ```
 
 2. Start the server (local):
