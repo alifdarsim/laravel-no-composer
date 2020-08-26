@@ -59,13 +59,17 @@ then
     mkdir "$folder1"
     echo ""
     echo -e "\033[0;32mDownloading Laravel No Composer... \033[0m";
-    curl -o laravel.tar.gz "https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/laravel8.tar.gz"
+    wget -O laravel.tar.gz "https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/laravel8.tar.gz"
     tar -xf laravel.tar.gz -C ./"$folder1"
     rm laravel.tar.gz
     echo -e "\033[0;32m.env Setup success. \033[0m ";
     (cd "$folder1" && php artisan key:generate)
     echo ""
     echo -e "\U0002713 \033[1;32mYour Laravel 8 project setup is complete \033[0m ";
+    echo ""
+    echo -e "To run your laravel project";
+    echo -e " 1. cd $folder1";
+    echo -e " 2. php artisan serve";
     echo ""
 elif [ "$selected_choice" = "Laravel 9.x" ]; 
 then

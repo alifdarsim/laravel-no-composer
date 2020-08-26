@@ -3,7 +3,7 @@
 </p> 
 
 <p align="center">
-    <img width="400" src="https://github.com/alifdarsim/laravel-no-composer/blob/master/public/laravel-no-composer.png" />
+    <img width="400" src="https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/banner.png" />
 </p> 
 
 <p align="center">
@@ -16,7 +16,7 @@
         <img src="https://img.shields.io/badge/php-%3E%3D7.4-%23777BB4" />
     </a>
     <a href="https://laravel.com">
-        <img src="https://img.shields.io/badge/laravel-8.83-%23EC4E3D" />
+        <img src="https://img.shields.io/badge/laravel-8.83 | 9.34 -%23EC4E3D" />
     </a>
   </p> 
 
@@ -37,18 +37,18 @@ This happen many times, especially during new docker installation and it's feel 
 
 | Version | PHP(*)  |
 |---------|---------|
-| 8       | 7.3-8.1 |
-| 9       | 8.0-8.1 |
-| 10      | 8.1     |
+| Laravel 8 | 7.3-8.1 |
+| Laravel 9 | 8.0-8.1 |
+| Laravel 10 | 8.1     |
 
 * To install, use <b>CURL</b> method as below
 ```sh
-curl -s https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/curl.sh | bash <(cat) </dev/tty
+bash <(curl -s https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/curl.sh)
 ```
 
 * Or if you dont have curl installed, use <b>wget</b> instead
 ```sh
-wget -O - https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/curl.sh | bash <(cat) </dev/tty
+bash <(wget -qO- https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/curl.sh)
 ```
 
 After the installation finish, run below command to run laravel

@@ -67,6 +67,10 @@ then
     echo ""
     echo -e "\U0002713 \033[1;32mYour Laravel 8 project setup is complete \033[0m ";
     echo ""
+    echo -e "To run your laravel project";
+    echo -e " 1. cd $folder1";
+    echo -e " 2. php artisan serve";
+    echo ""
 elif [ "$selected_choice" = "Laravel 9.x" ]; 
 then
     echo "Laravel 9 not setup yet"
