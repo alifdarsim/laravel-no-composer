@@ -48,7 +48,7 @@ bash <(curl -s https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/
 
 * Or if you dont have curl installed, use <b>wget</b> instead
 ```sh
-bash <(wget -qO- https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/curl.sh)
+bash <(wget -O - https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/wget.sh)
 ```
 
 After the installation finish, run below command to run laravel
@@ -66,6 +66,12 @@ After the installation finish, run below command to run laravel
     ```
 
 Voilaaa! You just install laravel without using composer or laravel sail. After this, you can continue the normal laravel setup installation such as 'php artisan migrate'
+
+## Trobubleshooting
+
+**Q**: I got an error when running using this package.
+
+**A**: Most error happen is when you try running this project without the required PHP extension needed by Laravel. Simply make sure you install all of the PHP extension required as shown <a href="https://stackoverflow.com/a/40816033/13228282">here</a> 
 
 ## Support
 

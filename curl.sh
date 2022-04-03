@@ -59,7 +59,7 @@ then
     mkdir "$folder1"
     echo ""
     echo -e "\033[0;32mDownloading Laravel No Composer... \033[0m";
-    wget -O laravel.tar.gz "https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/laravel8.tar.gz"
+    curl -o laravel.tar.gz "https://raw.githubusercontent.com/alifdarsim/laravel-no-composer/master/laravel8.tar.gz"
     tar -xf laravel.tar.gz -C ./"$folder1"
     rm laravel.tar.gz
     echo -e "\033[0;32m.env Setup success. \033[0m ";
